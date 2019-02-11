@@ -1,0 +1,23 @@
+{
+  "name": "cuistot-static",
+  "version": "0.0.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:CuistotduCoin/cuistot.git"
+  },
+  "scripts": {
+    "build": "node imagemin.js",
+    "deploy": "env-cmd .env serverless client deploy --no-delete-contents --no-confirm"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "serverless-dotenv-plugin": "^2.0.1",
+    "serverless-finch": "^2.3.2"
+  },
+  "dependencies": {
+    "image-2-min": "^6.0.2",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^6.0.0"
+  }
+}
