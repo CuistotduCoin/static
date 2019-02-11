@@ -18,6 +18,6 @@
   "dependencies": {
     "image-2-min": "^6.0.2",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^6.0.0"
+    "imagemin-pngquant": "^7.0.0"
   }
 }
