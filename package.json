@@ -12,7 +12,9 @@
     "deploy": "env-cmd .env serverless client deploy --no-delete-contents --no-confirm"
   },
   "devDependencies": {
+    "aws-param-env": "^1.2.0",
     "env-cmd": "^8.0.2",
+    "fs": "^0.0.1-security",
     "serverless-dotenv-plugin": "^2.0.1",
     "serverless-finch": "^2.3.2"
   },
