@@ -5,7 +5,7 @@ awsParamEnv.load('/cuistot', { region: 'eu-west-1' });
 
 const content = `\
 AWS_REGION_PARIS=eu-west-3
-AWS_STATIC_DOMAIN=${process.env['static/domain']}
+AWS_STATIC_DOMAIN=static.cuistotducoin.com
 `;
 
 fs.writeFile('.env', content, (err) => {
