@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - restore_cache: &restore_static_cache
-          key: dependency-cache-{{ checksum "static/yarn.lock" }}
+          key: dependency-cache-{{ checksum "./yarn.lock" }}
       - run: &install_assume_role
           name: Install assume role tool
           command: |
@@ -33,7 +33,7 @@ jobs:
             sudo npm i -g serverless
             yarn install
       - save_cache: &save_static_cache
-          key: dependency-cache-{{ checksum "static/yarn.lock" }}
+          key: dependency-cache-{{ checksum "./yarn.lock" }}
           paths:
             - ./node_modules
       - run:
