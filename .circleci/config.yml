@@ -8,7 +8,7 @@ jobs:
       AWS_CONFIG_PATH: /home/circleci/.aws
     steps:
       - checkout
-      - restore_cache: &restore_front_cache
+      - restore_cache: &restore_static_cache
           key: dependency-cache-{{ checksum "static/yarn.lock" }}
       - run: &install_assume_role
           name: Install assume role tool
@@ -36,6 +36,10 @@ jobs:
           key: dependency-cache-{{ checksum "static/yarn.lock" }}
           paths:
             - ./node_modules
+      - run:
+          name: Build env
+          command: |
+            yarn create-env:prod
       - run:
           name: Build static
           command: |
