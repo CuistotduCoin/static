@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "aws-param-env": "^1.2.0",
+    "aws-sdk": "^2.405.0",
     "env-cmd": "^8.0.2",
     "fs": "^0.0.1-security",
     "serverless-dotenv-plugin": "^2.0.1",
