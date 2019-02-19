@@ -17,8 +17,6 @@ fs.writeFile(`${process.env.AWS_CONFIG_PATH}/config`, content, (err) => {
   console.log('aws config saved...');
 });
 
-console.log(process.env.AWS_MASTER_ACCESS_KEY_ID, process.env.AWS_MASTER_SECRET_ACCESS_KEY);
-
 content = `\
 [default]
 aws_access_key_id = ${process.env.AWS_MASTER_ACCESS_KEY_ID}
