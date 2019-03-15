@@ -9,7 +9,7 @@
   "scripts": {
     "create-env:prod": "assume-role production node loadenv",
     "build": "node imagemin.js",
-    "deploy": "env-cmd .env serverless client deploy --no-delete-contents --no-confirm"
+    "deploy": "env-cmd .env serverless client deploy --no-confirm"
   },
   "devDependencies": {
     "aws-param-env": "^1.2.0",
