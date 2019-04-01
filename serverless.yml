@@ -6,7 +6,7 @@ provider:
   name: aws
   runtime: nodejs8.10
   stage: dev
-  region: ${env:AWS_REGION_PARIS}
+  region: ${env:AWS_REGION_IRELAND}
 
 plugins:
   - serverless-dotenv-plugin

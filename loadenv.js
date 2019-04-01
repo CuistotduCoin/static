@@ -4,7 +4,7 @@ const awsParamEnv = require('aws-param-env');
 awsParamEnv.load('/cuistot/static', { region: 'eu-west-1' });
 
 const content = `\
-AWS_REGION_PARIS=eu-west-3
+AWS_REGION_IRELAND=eu-west-1
 AWS_STATIC_DOMAIN=${process.env['domain']}
 `;
 

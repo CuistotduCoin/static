@@ -4,7 +4,6 @@ jobs:
     docker:
       - image: circleci/node:8.10
     environment:
-      GOPATH: /home/circleci/go
       AWS_CONFIG_PATH: /home/circleci/.aws
     steps:
       - checkout
@@ -18,7 +17,7 @@ jobs:
       - run: &install_static_dependencies
           name: Install dependencies
           command: |
-            sudo npm i -g serverless
+            yarn global add serverless
             yarn install
       - save_cache: &save_static_cache
           key: dependency-cache-{{ checksum "./yarn.lock" }}
