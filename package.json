@@ -7,17 +7,16 @@
     "url": "git@github.com:CuistotduCoin/cuistot.git"
   },
   "scripts": {
-    "create-env:prod": "assume-role production node loadenv",
+    "create-env": "node loadenv",
     "build": "node imagemin.js",
     "deploy": "env-cmd .env serverless client deploy --no-confirm"
   },
   "devDependencies": {
     "aws-param-env": "^1.2.0",
-    "aws-sdk": "^2.405.0",
     "env-cmd": "^8.0.2",
     "fs": "^0.0.1-security",
     "serverless-dotenv-plugin": "^2.0.1",
-    "serverless-finch": "^2.3.2"
+    "serverless-finch": "^2.4.2"
   },
   "dependencies": {
     "image-2-min": "^6.0.2",
