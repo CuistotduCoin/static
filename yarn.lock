@@ -278,10 +278,6 @@ arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-async@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
-
 aws-param-env@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aws-param-env/-/aws-param-env-1.2.0.tgz#45834b50601b12a620ced8d703f1dd47729cf675"
@@ -292,13 +288,13 @@ aws-param-store@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/aws-param-store/-/aws-param-store-1.1.0.tgz#c1e8098bde8d6144698f0920829eceda0e4fedac"
 
-aws-sdk@^2.405.0:
-  version "2.405.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.405.0.tgz#77bd076ad05db2647caeb0645896257b8868ca6c"
+aws-sdk@^2.432.0:
+  version "2.554.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.554.0.tgz#7a58cbaec5f9e4c2780910b458a77022557c2fc8"
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
-    ieee754 "1.1.8"
+    ieee754 "1.1.13"
     jmespath "0.15.0"
     querystring "0.2.0"
     sax "1.2.1"
@@ -403,10 +399,6 @@ bl@^1.0.0:
   dependencies:
     readable-stream "^2.3.5"
     safe-buffer "^5.1.1"
-
-bluebird@^3.0.6:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -1473,9 +1465,9 @@ http-cache-semantics@3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-3.8.1.tgz#39b0e16add9b605bf0a9ef3d9daaf4843b4cacd2"
 
-ieee754@1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
+ieee754@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.13.tgz#ec168558e95aa181fd87d37f55c32bbcb6708b84"
 
 ieee754@^1.1.4:
   version "1.1.12"
@@ -1951,10 +1943,6 @@ lodash.templatesettings@^3.0.0:
     lodash._reinterpolate "^3.0.0"
     lodash.escape "^3.0.0"
 
-lodash@^4.2.1:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
-
 log-ok@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/log-ok/-/log-ok-0.1.1.tgz#bea3dd36acd0b8a7240d78736b5b97c65444a334"
@@ -2225,7 +2213,7 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
 
 onetime@^1.0.0:
   version "1.1.0"
-  resolved "http://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz#a1f7838f8314c516f05ecefcbc4ccfe04b4ed789"
+  resolved "https://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz#a1f7838f8314c516f05ecefcbc4ccfe04b4ed789"
 
 ordered-read-streams@^0.3.0:
   version "0.3.0"
@@ -2688,14 +2676,11 @@ serverless-dotenv-plugin@^2.0.1:
     dotenv "^4.0.0"
     dotenv-expand "^4.0.1"
 
-serverless-finch@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/serverless-finch/-/serverless-finch-2.3.2.tgz#1d9209ef21451baefb4cd5c4b21f24fc9e41e833"
+serverless-finch@^2.4.2:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/serverless-finch/-/serverless-finch-2.4.3.tgz#8eb0186dd2b7adfa22d12c4783601d2768316fab"
   dependencies:
-    async "^1.5.2"
-    bluebird "^3.0.6"
     is_js "^0.9.0"
-    lodash "^4.2.1"
     mime "^1.2.11"
     minimatch "^3.0.4"
     prompt-confirm "^1.2.0"
@@ -2711,8 +2696,8 @@ set-immediate-shim@^1.0.0:
   resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
 
 set-value@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/set-value/-/set-value-3.0.0.tgz#bc021514f46effed8176fd5f0f67e9988531141f"
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/set-value/-/set-value-3.0.1.tgz#52c82af7653ba69eb1db92e81f5cdb32739b9e95"
   dependencies:
     is-plain-object "^2.0.4"
 
