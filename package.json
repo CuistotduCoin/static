@@ -12,16 +12,17 @@
     "deploy": "env-cmd .env serverless client deploy --no-confirm"
   },
   "devDependencies": {
-    "aws-param-env": "^1.2.0",
-    "aws-sdk": "^2.432.0",
+    "aws-param-env": "^2.1.0",
+    "aws-sdk": "^2.610.0",
     "env-cmd": "^8.0.2",
     "fs": "^0.0.1-security",
-    "serverless-dotenv-plugin": "^2.0.1",
-    "serverless-finch": "^2.4.2"
+    "serverless-dotenv-plugin": "^2.1.1",
+    "serverless-finch": "^2.5.2"
   },
   "dependencies": {
     "image-2-min": "^6.0.2",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^7.0.0"
+    "imagemin-pngquant": "^7.0.0",
+    "serverless": "^1.61.3",
   }
 }

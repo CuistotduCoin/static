@@ -2,7 +2,7 @@ version: 2
 jobs:
   deploy-static:
     docker:
-      - image: circleci/node:8.10
+      - image: circleci/node:latest
     environment:
       AWS_CONFIG_PATH: /home/circleci/.aws
     steps:
@@ -17,7 +17,6 @@ jobs:
       - run: &install_static_dependencies
           name: Install dependencies
           command: |
-            yarn global add serverless
             yarn install
       - save_cache: &save_static_cache
           key: dependency-cache-{{ checksum "./yarn.lock" }}
